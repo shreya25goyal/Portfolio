@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class = "container">
+            <nav> 
+                <img src="images/logo.svg" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class = "header-text">
+                <p>Web Developer and Programmer</p>
+                <h1>Hi I am <span>Shreya</span><br>From GLA University</h1>
+            </div>
+        </div>
+    </div>
+    
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class = "about-col-1">
+                    <img src="images/My Image.jpg">
+                </div>
+                <div class = "about-col-2">
+                    <h1 class = "sub-title">About Me</h1>
+                    <p>I'm adept in Java, data structures and algorithms (DSA), and web development. My project portfolio includes creations like an anti-theft alarm system, a smart door lock system, and a Java-based calculator. With a passion for leveraging technology to solve real-world challenges, I continuously hone my skills and seek opportunities to innovate. Through my proficiency in Java and DSA, coupled with my experience in web development, I'm equipped to tackle diverse projects and contribute effectively to any team. I thrive on pushing the boundaries of what's possible in software development, driven by a relentless pursuit of excellence and creativity.</p>
+                    <div class="tab-titles">
+                        <p class = "tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class = "tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class = "tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Creating dynamic and user-friendly websites</li>
+                            <li><span>Java Programming</span><br>developing efficient and scalable solutions</li>
+                            <li><span>IIOT</span><br>Integrating sensors, devices, and data analytics </li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>2023</span><br>Anti-Theft Alarm System Project</li>
+                            <li><span>2024</span><br>Java-based Calculator</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2022-2026</span><br>Pursuing B.tech in CS from GLA University</li>
+                            <li><span>2022</span><br>Completed final year of secondary education</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div id="services">
+        <div class="container">
+            <h1 class = "sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci dicta culpa temporibus laudantium nulla, ducimus consectetur corporis provident necessitatibus vitae quia, ab deserunt quam libero maxime? Aut eius sit recusandae!</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>Programming</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci dicta culpa temporibus laudantium nulla, ducimus consectetur corporis provident necessitatibus vitae quia, ab deserunt quam libero maxime? Aut eius sit recusandae!</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id = "portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/WhatsApp Image 2024-06-14 at 13.41.21_8d5c3061.jpg">
+                    <div class="layer">
+                        <h3>Anti-Theft Alarm System</h3>
+                        <p>In this project we made a museum of diamond in which if a thief try to stole the diamond the buzzers starts beeping and LEDs turns red from green</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/Calculator.jpg">
+                    <div class="layer">
+                        <h3>JAVA-BASED CALCULATOR</h3>
+                        <p> Perform basic arithmetic calculations, making it a useful tool for anyone in need of quick computations</p>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i>goyalshreya2525@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i>7505384365</p>
+                    <p><i class="fab fa-linkedin"></i>My Linkedin profile: "https://www.linkedin.com/in/shreya-goyal-14a63b261"</p>
+                    
+                </div>
+                <a href="images/Minimalist Modern Professional CV Resume.pdf" download class="btn btn2">DOWNLOAD CV</a>
+                <div class="contact-right">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p> Copyright &copy; Shreya Goyal, 2024</p>
+        </div>
+
+    </div>
+
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+</body>
+</html>
